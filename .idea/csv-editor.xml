@@ -24,27 +24,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\Data_Source_Module\y_test.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data_Source_Module\y_train.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\data_package\train data.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\tensor_flow_auto ML\MLP\L\X_test_scaled.csv">
           <value>
             <Attribute>
