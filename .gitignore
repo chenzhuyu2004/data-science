@@ -171,3 +171,5 @@ cython_debug/
 
 # 忽略 JSON 文件
 *.json
+# 忽略 PKL 文件
+*.pkl
