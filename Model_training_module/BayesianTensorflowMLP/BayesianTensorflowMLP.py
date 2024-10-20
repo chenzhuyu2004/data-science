@@ -1,8 +1,9 @@
 import math
 import os
 import shutil
-import matplotlib.pyplot as plt
+
 import matplotlib as mpl
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import tensorflow as tf
@@ -20,7 +21,7 @@ mpl.rcParams['font.family'] = 'Microsoft YaHei'  # 或者使用其他支持中�
 mpl.rcParams['axes.unicode_minus'] = False  # 处理负号显示问题
 
 # 定义数据目录
-BASE_DIR = os.getcwd()
+BASE_DIR = r"D:\pycharm\pythonProject"
 DATA_DIR = os.path.join(BASE_DIR, 'Data_Source_Module')
 
 # 读取数据
@@ -124,7 +125,7 @@ class AdaptiveTuner(BayesianOptimization):
 
 
 # 定义主目录和子目录
-main_training_dir = os.path.join(BASE_DIR, 'Model_training_module', 'BayesianTunedMLP')
+main_training_dir = os.path.join(BASE_DIR, 'Model_training_module', 'BayesianTensorflowMLP')
 os.makedirs(main_training_dir, exist_ok=True)
 
 # 目标变量列名
@@ -288,3 +289,4 @@ for column in target_columns:
     tuning_dir = os.path.join(main_training_dir, f'tuning_results_{column}')
     trial_dirs = [d for d in os.listdir(tuning_dir) if d.startswith('trial_')]
     plot_trials_loss_data(trial_dirs, tuning_dir, column)
+

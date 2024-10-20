@@ -12,12 +12,12 @@ def main():
 
     # 定义文件路径
     base_dir = os.getcwd()  # 获取当前工作目录
-    data_path = os.path.join(base_dir, 'Data_Source_Module', 'train data.csv')
-    scaler_path = os.path.join(base_dir, 'Data_Source_Module', 'scaler.pkl')
-    scaled_train_path = os.path.join(base_dir, 'Data_Source_Module', 'X_train_scaled.csv')
-    scaled_test_path = os.path.join(base_dir, 'Data_Source_Module', 'X_test_scaled.csv')
-    y_train_path = os.path.join(base_dir, 'Data_Source_Module', 'y_train.csv')
-    y_test_path = os.path.join(base_dir, 'Data_Source_Module', 'y_test.csv')
+    data_path = os.path.join(base_dir,  'train data.csv')
+    scaler_path = os.path.join(base_dir,  'scaler.pkl')
+    scaled_train_path = os.path.join(base_dir,  'X_train_scaled.csv')
+    scaled_test_path = os.path.join(base_dir,  'X_test_scaled.csv')
+    y_train_path = os.path.join(base_dir,  'y_train.csv')
+    y_test_path = os.path.join(base_dir,  'y_test.csv')
 
     # 读取数据集
     data = pd.read_csv(data_path)
