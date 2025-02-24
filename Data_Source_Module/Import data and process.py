@@ -12,7 +12,7 @@ def main():
 
     # 定义文件路径
     base_dir = os.getcwd()  # 获取当前工作目录
-    data_path = os.path.join(base_dir,  'train data.csv')
+    data_path = os.path.join(base_dir,  'recover data.csv')
     scaler_path = os.path.join(base_dir,  'scaler.pkl')
     scaled_train_path = os.path.join(base_dir,  'X_train_scaled.csv')
     scaled_test_path = os.path.join(base_dir,  'X_test_scaled.csv')
@@ -25,8 +25,8 @@ def main():
     print(data.head())
 
     # 分割特征和目标变量
-    features = data.iloc[:, :8]  # 前8列作为特征
-    targets = data.iloc[:, 8:]  # 后3列作为目标变量
+    features = data.iloc[:, :3]  # 前8列作为特征
+    targets = data.iloc[:, 3:]  # 后3列作为目标变量
 
     # 划分数据集为训练集和测试集
     X_train, X_test, y_train, y_test = train_test_split(features, targets, test_size=0.2, random_state=42)
