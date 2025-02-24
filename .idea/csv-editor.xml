@@ -38,13 +38,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\Model_training_module\1\2.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\Model_training_module\BayesianPytorchMLP\Diameter\tuning_results\trial_0\lr_list.csv">
           <value>
             <Attribute>
